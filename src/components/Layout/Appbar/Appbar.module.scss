@@ -1,0 +1,42 @@
+@import "scss/variables";
+
+.header {
+    background-color: $accent-color;
+    box-shadow: $box-shadow;
+
+    & > div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav {
+        flex: 2;
+    }
+}
+
+.logo {
+    color: $main-color;
+    margin: 0.5rem 0;
+    flex: 1;
+}
+
+.points {
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+
+    span {
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+
+    .points--good {
+        color: green;
+    }
+
+    .points--bad {
+        color: red;
+        margin-left: 1rem;
+    }
+}
